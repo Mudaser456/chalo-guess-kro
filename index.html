@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <h1>Number Guessing Game</h1>
-        <p>Try and guess a random number between 1 to 100</p>
-        <p>You have 10 attempts to guess the right number</p>
+    <div class="container">
+        <header>
+            <h1>Guess My Number</h1>
+            <p>Guess a random number</p>
+            <div class="range-inputs">
+                <input class="range-input" type="text" id="min" placeholder="Min">
+                <input class="range-input" type="text" id="max" placeholder="Max">
+                <button id="new-target">New Target</button>
+            </div>
+        </header>
+
+        <main>
+            <p class="message"></p>
+            <input type="text" id="guessInput" class="guess" />
+            <button id="check_btn">Guess</button>
+        </main>
 
     </div>
-
-    <form class="form">
-        <h1>Guess the number</h1>
-        <input type="text" class="input" id="guess" placeholder="Enter your guess here">
-        <button type="submit" class="btn">Submit</button>
-        <p class="message"></p>
-        <p class="attempts">Attempts left: <span id="attemptsLeft">10</span></p>
-        <p class="number">The number is: <span id="number"></span></p>
-    </form>
-
-
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
